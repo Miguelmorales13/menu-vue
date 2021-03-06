@@ -9,9 +9,9 @@ const {join} = require("path");
 // })
 app.use(express.static(join(__dirname, "/dist/")));
 app.get("*", (req, res) => {
-  console.log(join(__dirname, "/dist/index.html"));
+  console.log(join(__dirname, "/dist/pwa/index.html"));
 
-  return res.sendfile(join(__dirname, "./dist/index.html"));
+  return res.sendfile(join(__dirname, "./dist/pwa/index.html"));
 });
 
 app.listen(3000, console.log("listening"));
