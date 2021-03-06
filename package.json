@@ -1,0 +1,55 @@
+{
+  "name": "menu",
+  "version": "0.0.1",
+  "description": "Es una aplicacion paara administrar el menu de una aplicacion demostrativa",
+  "productName": "menu-app",
+  "author": "Miguel Angel Morales <miguel.moralesr@hotmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env QENV=development quasar dev",
+    "test-dev": "cross-env QENV=test quasar dev",
+    "test": "QENV=test quasar build -m pwa",
+    "prod": "QENV=production quasar build -m pwa"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "axios": "^0.18.1",
+    "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "file-saver": "^2.0.5",
+    "qrcode": "^1.4.4",
+    "quasar": "^1.0.0",
+    "vue-class-component": "^7.2.2",
+    "vue-i18n": "^8.0.0",
+    "vue-property-decorator": "^8.3.0",
+    "vuex-module-decorators": "^1.0.1",
+    "vuex-persist": "^3.1.3",
+    "xlsx": "^0.16.9"
+  },
+  "devDependencies": {
+    "@quasar/app": "^2.0.0",
+    "@quasar/quasar-app-extension-qenv": "^1.0.3",
+    "@types/file-saver": "^2.0.1",
+    "@types/node": "^10.17.15",
+    "@types/qrcode": "^1.3.5",
+    "cross-env": "^7.0.3",
+    "quasar-app-extension-ide-helper": "^1.0.0",
+    "workbox-webpack-plugin": "^5.0.0"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
