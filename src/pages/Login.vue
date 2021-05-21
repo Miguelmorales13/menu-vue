@@ -5,7 +5,7 @@
         <q-card class="shadow-10">
           <q-card-section class="bg-primary">
             <div class="text-h6 text-center">
-              <img height="50px" src="/icons/logonormal.png"/>
+              <img height="50px" :src=`${process.env.PATH}'icons/logonormal.png'`/>
             </div>
           </q-card-section>
           <q-separator/>
@@ -127,7 +127,7 @@ export default class Login extends Vue {
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url("/background.jpg");
+  background-image: url("/menu-vue/background.jpg");
 
   .bg-shadow {
     background: rgba(0, 0, 0, 0.1);
