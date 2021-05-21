@@ -9,8 +9,9 @@
     "dev": "cross-env QENV=development quasar dev",
     "test-dev": "cross-env QENV=test quasar dev",
     "test": "QENV=test quasar build -m pwa",
-    "build": "cross-env QENV=production quasar build -m pwa",
-    "deploy": "gh-pages -d build -r https://$GH_TOKEN@github.com/miguelmorales13/weather-api-consumer"
+    "build": "QENV=development quasar build -m pwa",
+    "build:prod": "cross-env QENV=production quasar build -m pwa",
+    "deploy": "git subtree push --prefix dist/pwa origin gh-pages"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
