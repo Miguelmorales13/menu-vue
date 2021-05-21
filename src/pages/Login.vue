@@ -7,6 +7,7 @@
             <div class="text-h6 text-center">
               <img height="50px" src='/menu-vue/icons/logonormal.png'/>
             </div>
+
           </q-card-section>
           <q-separator/>
           <q-card-section class="q-px-lg">
