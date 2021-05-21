@@ -47,10 +47,10 @@ module.exports = configure(function (ctx ) {
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
-      vueRouterMode: 'history', // available values: 'hash', 'history'
-      publicPath:'/menu-vue/',
-      appBase:'/menu-vue/',
-      vueRouterBase:'/menu-vue/',
+      vueRouterMode: ctx.prod?'history':'hash', // available values: 'hash', 'history'
+      publicPath:ctx.prod?'/menu-vue/':'/',
+      appBase:ctx.prod?'/menu-vue/':'/',
+      vueRouterBase:ctx.prod?'/menu-vue/':'/',
       // transpile: false,
       // Add dependencies for transpiling with Babel (Array of string/regex)
       // (from node_modules, which are by default not transpiled).
