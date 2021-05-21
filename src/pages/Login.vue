@@ -5,7 +5,7 @@
         <q-card class="shadow-10">
           <q-card-section class="bg-primary">
             <div class="text-h6 text-center">
-              <img height="50px" :src=`${process.env.PATH_CONTEXT}'icons/logonormal.png'`/>
+              <img height="50px" :src=`'/menu-vue/icons/logonormal.png'`/>
             </div>
           </q-card-section>
           <q-separator/>
