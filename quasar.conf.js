@@ -9,7 +9,7 @@
 const {configure} = require('quasar/wrappers');
 
 module.exports = configure(function (ctx ) {
-  console.log(process.env.PATH_CONTEXT)
+  console.log(ctx)
   return {
     // https://quasar.dev/quasar-cli/supporting-ts
     supportTS: true,
@@ -48,7 +48,9 @@ module.exports = configure(function (ctx ) {
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
       vueRouterMode: 'history', // available values: 'hash', 'history'
-      appBase:process.env.PATH_CONTEXT,
+      publicPath:'/menu-vue/',
+      appBase:'/menu-vue/',
+      vueRouterBase:'/menu-vue/',
       // transpile: false,
       // Add dependencies for transpiling with Babel (Array of string/regex)
       // (from node_modules, which are by default not transpiled).
